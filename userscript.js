@@ -692,8 +692,9 @@
                     $(list).append('<div class="label label-change label-change-bad">'+ '−' + Math.abs(progress_since_last) + '</div>');
                 }
 
+                var percentage = Math.round((bardata["bars"][key].count_learned / bardata["bars"][key].count_total * 100) * 100) / 100
                 $(list).append('<div class="label label-left">'+ bardata["bars"][key].label + '</div>');
-                $(list).append('<div class="label label-right">'+ bardata["bars"][key].count_learned + ' / ' + bardata["bars"][key].count_total + '</div>');
+                $(list).append('<div class="label label-right">'+ bardata["bars"][key].count_learned + ' / ' + bardata["bars"][key].count_total + ' (' + percentage + '%)' + '</div>');
 
                 if (reverse_color_order) {
                     $(list).append('<div class="srs1 element shadow" style="width: '+ bardata["bars"][key].apprentice1 + '%"></div>');
