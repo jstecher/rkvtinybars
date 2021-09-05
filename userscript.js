@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Wanikani: R/K/V Tiny Bars
 // @namespace    http://tampermonkey.net/
-// @version      1.5.0
+// @version      1.5.1
 // @description  Adds colored bars to individually track radicals / kanji / vocab
 // @author       Thalanor
 // @match        https://www.wanikani.com/
