@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Wanikani: R/K/V Tiny Bars
 // @namespace    http://tampermonkey.net/
-// @version      1.5.1
+// @version      1.5.2
 // @description  Adds colored bars to individually track radicals / kanji / vocab
 // @author       Thalanor
 // @match        https://www.wanikani.com/
@@ -331,6 +331,8 @@
                 } else if (item_type === "kanji") {
                     item_key = 1;
                 } else if (item_type === "vocabulary") {
+                    item_key = 2;
+                } else if (item_type === "kana_vocabulary") {
                     item_key = 2;
                 }
 
